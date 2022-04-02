@@ -64,8 +64,7 @@ let Drake = {
     }
   },
 };
-let variaveldecontrolegeral = "";
-while (variaveldecontrolegeral = true) {
+while (true) {
   //VALIDAÇÃO E PRIMEIRA AÇÃO
   console.log(`\nRESPONDA AS OPÇÕES COM [1], [2] OU [3]\n`);
   console.log(
@@ -89,8 +88,9 @@ while (variaveldecontrolegeral = true) {
       break;
     }
     perg1 = +prompt("Insira um número válido(1, 2 ou 3)");
-    
   }
   console.log(Drake);
-  
+  if (Drake.energiaEsaude == 0) {
+    break;
+  }
 }
