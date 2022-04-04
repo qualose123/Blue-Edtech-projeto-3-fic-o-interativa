@@ -3,7 +3,6 @@ const prompt = require("prompt-sync")();
 console.log(
   "\nAjude Drake a colocar a vida nos trilhos denovo, atualmente ele está desempregado, e com pouco dinheiro.Você tem 9 ações para tentar por Drake nos trilhos, caso a saúde ou a autoestima de drake chegue a 0 você perde o jogo,caso a autoestima de Drake chegue a 100, você deu um norte e algum sentido pra viver a Drake, sendo assim, você ganha o jogo \n"
 );
-let recomecar = "";
 //status Drake e funções de passagem de tempo por ação
 let Drake = {
   dinheiro: 100,
@@ -77,7 +76,11 @@ let Drake = {
   },
 };
 console.clear();
-console.log(Drake);
+console.log(`Dinheiro:${Drake.dinheiro}
+Saúde:${Drake.saude}
+Dia:${Drake.dia}
+Autoestima:${Drake.autoestima}
+Horas:${Drake.horas}`);
 while (true) {
   //VALIDAÇÃO E PRIMEIRA AÇÃO
   console.log(`\nRESPONDA AS OPÇÕES COM [1], [2] OU [3]\n`);
@@ -105,7 +108,11 @@ while (true) {
     perg1 = +prompt("Insira um número válido(1, 2 ou 3)");
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+Saúde:${Drake.saude}
+Dia:${Drake.dia}
+Autoestima:${Drake.autoestima}
+Horas:${Drake.horas}`);
   console.log();
 
   //VALIDAÇÃO E SEGUNDA AÇÃO
@@ -144,7 +151,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+  Saúde:${Drake.saude}
+  Dia:${Drake.dia}
+  Autoestima:${Drake.autoestima}
+  Horas:${Drake.horas}`);
   console.log();
 
   //VALIDAÇÃO E TERCEIRA AÇÃO
@@ -187,7 +198,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+Saúde:${Drake.saude}
+Dia:${Drake.dia}
+Autoestima:${Drake.autoestima}
+Horas:${Drake.horas}`);
   console.log();
 
   //   //VALIDAÇÃO E QUARTA AÇÃO
@@ -227,7 +242,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+Saúde:${Drake.saude}
+Dia:${Drake.dia}
+Autoestima:${Drake.autoestima}
+Horas:${Drake.horas}`);
   console.log();
 
   //   //VALIDAÇÃO E QUINTA AÇÃO
@@ -268,7 +287,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+  Saúde:${Drake.saude}
+  Dia:${Drake.dia}
+  Autoestima:${Drake.autoestima}
+  Horas:${Drake.horas}`);
   console.log();
 
   //   //VALIDAÇÃO E SEXTA AÇÃO
@@ -310,7 +333,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+Saúde:${Drake.saude}
+Dia:${Drake.dia}
+Autoestima:${Drake.autoestima}
+Horas:${Drake.horas}`);
   console.log();
 
   //   //VALIDAÇÃO E SÉTIMA AÇÃO
@@ -353,7 +380,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+  Saúde:${Drake.saude}
+  Dia:${Drake.dia}
+  Autoestima:${Drake.autoestima}
+  Horas:${Drake.horas}`);
   console.log();
 
   //   //VALIDAÇÃO E OITAVA AÇÃO
@@ -399,7 +430,11 @@ while (true) {
     break;
   }
   console.clear();
-  console.log(Drake);
+  console.log(`Dinheiro:${Drake.dinheiro}
+Saúde:${Drake.saude}
+Dia:${Drake.dia}
+Autoestima:${Drake.autoestima}
+Horas:${Drake.horas}`);
   console.log();
 
   //   //VALIDAÇÃO E AÇÃO FINAL
@@ -445,12 +480,4 @@ while (true) {
   console.clear();
   console.log(Drake);
   console.log();
-
-  recomecar = prompt("Deseja recomeçar o jogo?");
-
-  if (recomecar.toLowerCase == "sim") {
-    continue;
-  } else {
-    break;
-  }
 }
