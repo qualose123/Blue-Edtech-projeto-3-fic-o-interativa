@@ -2,9 +2,7 @@ const prompt = require("prompt-sync")();
 //sinopse
 
 do {
-  console.log(
-    "\nAjude Drake a colocar a vida nos trilhos denovo, atualmente ele está desempregado, e com pouco dinheiro.Você tem 9 ações para tentar por Drake nos trilhos, caso a saúde ou a autoestima de drake chegue a 0 você perde o jogo,caso a autoestima de Drake chegue a 100, você deu um norte e algum sentido pra viver a Drake, sendo assim, você ganha o jogo \n"
-  );
+  
   //status Drake e funções de passagem de tempo por ação
   let Drake = {
     dinheiro: 100,
@@ -85,6 +83,9 @@ Autoestima:${Drake.autoestima}
 Horas:${Drake.horas}`);
 
   while (true) {
+    console.log(
+      "\nAjude Drake a colocar a vida nos trilhos denovo, atualmente ele está desempregado, e com pouco dinheiro.Você tem 9 ações para tentar por Drake nos trilhos, caso a saúde ou a autoestima de drake chegue a 0 você perde o jogo,caso a autoestima de Drake chegue a 100, você deu um norte e algum sentido pra viver a Drake, sendo assim, você ganha o jogo \n"
+    );
     //VALIDAÇÃO E PRIMEIRA AÇÃO
     console.log(`\nRESPONDA AS OPÇÕES COM [1], [2] OU [3]\n`);
     console.log(
