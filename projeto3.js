@@ -490,7 +490,7 @@ Horas:${Drake.horas}`);
     console.log();
   }
   console.log(
-    "Digite sim se quiser recomeçar ou qualquer tecla para encerrar o jogo"
+    "Digite [sim] se quiser recomeçar ou qualquer tecla para encerrar o jogo"
   );
   recomecar = prompt().toLowerCase();
 } while (recomecar == "sim" || recomecar == "s");
